@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Proposal to Sravya Rajamahanthi</title>
+  <link rel="stylesheet" href="srav.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1 class="name">Sravya Rajamahanthi</h1>
+    <p class="message">I have something very special to ask you...</p>
+    <button onclick="showProposal()">Click Here 💌</button>
+
+    <div class="proposal-box" id="proposalBox">
+      <p class="proposal-text">Will you marry me, Sravya?</p>
+      <div class="response-buttons">
+        <button class="yes-btn" onclick="handleYes()">Yes 💖</button>
+        <button class="no-btn" onclick="handleNo()">No 😢</button>
+      </div>
+    </div>
+
+    <div id="finalMessage" class="final-message"></div>
+  </div>
+
+  <canvas id="heartCanvas"></canvas>
+  <script src="srav.js"></script>
+</body>
+</html>

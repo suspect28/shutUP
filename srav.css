@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #ffe6f0;
+  position: relative;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #d6336c;
+}
+
+.name {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.message {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+button {
+  background-color: #ff4d6d;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #e6004c;
+}
+
+.proposal-box {
+  margin-top: 30px;
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  display: none;
+  animation: fadeIn 1s ease forwards;
+}
+
+.proposal-text {
+  font-size: 2rem;
+  font-family: 'Great Vibes', cursive;
+  color: #cc3366;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: scale(0.95);}
+  to {opacity: 1; transform: scale(1);}
+}
+
+/* Heart background */
+#heartCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
